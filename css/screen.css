@@ -565,7 +565,12 @@ a:focus {
   color: inherit;
   font-size: 16px;
   line-height: var(--global-whitespace-lg);
-  padding: calc((48px - (var(--global-border-width) * 2) - var(--global-whitespace-lg)) / 2)
+  padding: calc(
+      (
+          var(var(--global-whitespace-xl)) - (var(--global-border-width) * 2) -
+            var(--global-whitespace-lg)
+        ) / 2
+    )
     var(--global-whitespace-md);
   outline: none;
 }
@@ -613,7 +618,12 @@ a:focus {
   color: #ffffff;
   background-color: var(--global-alpha);
   line-height: var(--global-whitespace-lg);
-  padding: calc((48px - (var(--global-border-width) * 2) - var(--global-whitespace-lg)) / 2);
+  padding: calc(
+    (
+        var(var(--global-whitespace-xl)) - (var(--global-border-width) * 2) -
+          var(--global-whitespace-lg)
+      ) / 2
+  );
   width: 100%;
 }
 
